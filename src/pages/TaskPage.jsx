@@ -3,8 +3,8 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 import Title from "../components/Title";
 
 function TaskPage() {
-  const navigate = useNavigate(); //sempre que tiver um "use" é pq é uma função HULK
-  const [searchParams] = useSearchParams(); //searchParams pega o primeiro elemento da lista
+  const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
   const title = searchParams.get("title");
   const description = searchParams.get("description");
   return (
